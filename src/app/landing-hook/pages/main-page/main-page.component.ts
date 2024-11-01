@@ -1,7 +1,7 @@
 import {Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import * as THREE from 'three';
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import {SVGLoader} from 'three/examples/jsm/loaders/SVGLoader';
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
+import {SVGLoader} from 'three/examples/jsm/loaders/SVGLoader.js';
 
 @Component({
   selector: 'app-main-page',
