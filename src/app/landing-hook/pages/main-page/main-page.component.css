@@ -1,3 +1,7 @@
 * {
   color: #50F0FF;
 }
+
+.clickable {
+  pointer-events: auto;
+}

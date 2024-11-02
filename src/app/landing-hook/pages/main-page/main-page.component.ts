@@ -19,12 +19,19 @@ export class MainPageComponent implements OnInit, OnDestroy {
   private logos: THREE.Mesh[] = [];
   private logosRadiuses: number[] = [];
   private logosAngles: number[] = [];
+  // user-case logic
+  public orbitControlsActive = true;
 
   constructor() {}
 
   ngOnInit() {
     this.initThree();
     this.animate();
+  }
+
+  onOrbitControlsChange(): void {
+    this.orbitControlsActive = !this.orbitControlsActive;
+    this.controls.enabled = this.orbitControlsActive;
   }
 
   ngOnDestroy(): void {
